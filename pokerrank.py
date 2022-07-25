@@ -13,13 +13,26 @@ def createADeck():
 
 deck = createADeck()
 
-#card combinations, now you must figure out how to get the computer to differentiate b/t the different card levels
-for i in range(0,5):    
-    print(random.choice(deck))
+#store the 5 random choices to a list 
+def pokerDraw():  
+    draw = []
+    for i in range(0,5):    
+        draw.append(random.choice(deck))
+    return draw
+        
+#delete later (just to see if draw function was working properly)
+draw = pokerDraw()
+print(draw)
+
+#now you must figure out how to get the computer to differentiate b/t the different card levels
+
+
+
+
 
 #if all values above 10 are in order it's a royal flush 10pts
 #if all values below 10 are in order it is a straight flush 9pts
-#if 3 names are the same and 2 others are also the same it is 4 of a kind 8pts
+#if 3 names are the same and 2 others are also the same it is 4 of
 
 #create card combinations list 5 values from the deck list in function createaDeck
 #list the values of the card combinations by score 
